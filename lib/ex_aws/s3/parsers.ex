@@ -76,6 +76,7 @@ if Code.ensure_loaded?(SweetXml) do
         uploads: [~x"./Upload"l,
           key: ~x"./Key/text()"s,
           upload_id: ~x"./UploadId/text()"s,
+          initiated: ~x"./Initiated/text()"s,
         ]
       )
       {:ok, %{resp | body: parsed_body}}
