@@ -73,6 +73,8 @@ if Code.ensure_loaded?(SweetXml) do
         bucket: ~x"./Bucket/text()"s,
         key_marker: ~x"./KeyMarker/text()"s,
         upload_id_marker: ~x"./UploadIdMarker/text()"s,
+        next_key_marker: ~x"./NextKeyMarker/text()"s,
+        next_upload_id_marker: ~x"./NextUploadIdMarker/text()"s,
         uploads: [~x"./Upload"l,
           key: ~x"./Key/text()"s,
           upload_id: ~x"./UploadId/text()"s,
