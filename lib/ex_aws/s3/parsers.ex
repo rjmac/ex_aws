@@ -75,6 +75,7 @@ if Code.ensure_loaded?(SweetXml) do
         upload_id_marker: ~x"./UploadIdMarker/text()"s,
         next_key_marker: ~x"./NextKeyMarker/text()"s,
         next_upload_id_marker: ~x"./NextUploadIdMarker/text()"s,
+        is_truncated: ~x"./IsTruncated/text()"s,
         uploads: [~x"./Upload"l,
           key: ~x"./Key/text()"s,
           upload_id: ~x"./UploadId/text()"s,
